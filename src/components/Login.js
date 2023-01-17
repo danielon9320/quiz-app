@@ -1,12 +1,13 @@
 import React from "react";
-import { TextField, Button, Box, Card, CardContent } from "@mui/material";
-import Center from './components/Center'
+import { TextField, Button, Box, Card, CardContent, Typography } from "@mui/material";
+import Center from './Center'
 
 export default function Login() {
   return (
     <Center>
-        <Card sx={{width:'400'}}>
-     <CardContent>
+    <Card sx={{width:'400'}}>
+     <CardContent sx={{textAlign: 'center'}}>
+     <Typography variant="h3" sx={{my:3}}>Quiz App</Typography>
      <Box sx={{
       '& .MuiTextField-root':{
         m: 1,
@@ -24,6 +25,8 @@ export default function Login() {
      </CardContent>
     </Card>
     </Center>
+
+    
 
  
   );
